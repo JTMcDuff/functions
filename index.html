@@ -1,0 +1,30 @@
+<DOCTYPE HTML>
+<html>
+
+<body>
+
+<script>
+//function sumArray adds the numbers of an array together
+function sumArray (arr){
+var total=0;
+
+for (var i=0; i<arr.length; i++){
+total+=arr[i];
+}
+return total;
+}
+
+//function palind splits a string in half and compares it to determine if the string is a palindrome
+function palind (stuff){
+var check=stuff.split("").reverse().join("");
+if (check===stuff) {console.log("It's a palindrome.")}
+else {console.log("It's not a palindrome.");}
+}
+
+
+</script>
+
+</body>
+
+</html>
+<DOCTYPE html>
