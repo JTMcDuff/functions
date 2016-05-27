@@ -21,7 +21,19 @@ if (check===stuff) {console.log("It's a palindrome.")}
 else {console.log("It's not a palindrome.");}
 }
 
-
+//function strLength accepts a string and determines the number of words in it,
+//and the average number of letters in each word.
+function strLength (str){
+var numLetter=new Array();
+var i=0;
+var numLetter=0;
+var numSpace=0;
+for (i=0;  i<str.length; i++) {
+if (/[a-z]/i.test(str[i])) {numLetter++;}
+if (/\s/.test(str[i])) {numSpace++;}
+}
+console.log("There are "+(numSpace+1)+" words. The average word has "+numLetter/(numSpace+1)+" letters");
+}
 </script>
 
 </body>
